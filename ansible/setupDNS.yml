@@ -1,0 +1,59 @@
+---
+- hosts: DNSServer
+  become: yes
+  tasks:
+  -  name: "Set Hostname"
+     hostname:
+       name: "{{ fqdn }}"
+  -  name: "Set Timezone"
+     timezone:
+       name:  Etc/UTC
+  -  name: "Update All Packages"
+     apt:
+       update_cache: yes
+       name: "*"
+       state: latest
+       autoclean: yes
+  -  name: "Install Unbound"
+     apt:
+       name: unbound
+  - name: "Install Root Hints"
+    get_url:
+      url:  https://www.internic.net/domain/named.cache
+      dest: /var/lib/unbound/root.hints
+  - name: "Set File Permissions"
+    file:
+       path:  /var/lib/unbound
+       state:  directory
+       recurse:  yes
+       owner:  unbound
+       group:  unbound
+  - name: "Download Unbound Config File"
+    get_url:
+      url:  https://raw.githubusercontent.com/faithfulst3ward/homelab/master/configs/unbound.conf
+      dest: /etc/unbound/unbound.conf.d/unbound.conf
+  - name:  "Stop and Disable systemd-resolved"
+    systemd:
+      name: systemd-resolved
+      state: stopped
+      enabled: no
+  - name: "Enable Unbound"
+    systemd:
+      name: unbound
+      state: started
+      enabled: yes
+  - name: "Set Local DNS Server"
+    lineinfile:
+      path: /etc/systemd/resolved.conf
+      regexp: '^#DNS='
+      line: DNS=127.0.0.1
+  - name: "Turn off Stub Listener"
+    lineinfile:
+      path: /etc/systemd/resolved.conf     
+      regexp: '^#DNSStubListener='
+      line: DNSStubListener=no
+  - name: "Turn on DNSSEC"
+    lineinfile:
+      path: /etc/systemd/resolved.conf     
+      regexp: '^#DNSSEC='
+      line: DNSSEC=yes
