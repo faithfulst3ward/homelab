@@ -60,7 +60,7 @@ ipv6_servers = false
 dnscrypt_servers = true
 
 # Use servers implementing the DNS-over-HTTPS protocol
-doh_servers = true
+doh_servers = false
 
 
 ## Require servers defined by remote sources to satisfy specific properties
@@ -320,7 +320,7 @@ reject_ttl = 600
 ##
 ## See the `example-cloaking-rules.txt` file for an example
 
-# cloaking_rules = 'cloaking-rules.txt'
+ cloaking_rules = 'cloaking-rules.txt'
 
 ## TTL used when serving entries in cloaking-rules.txt
 
