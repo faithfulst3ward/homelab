@@ -28,16 +28,13 @@
 ## require_* filters will be used instead.
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
-
-# server_names = ['scaleway-fr', 'google', 'yandex', 'cloudflare']
-
+server_names = ['cleanbrowsing-security', 'quad9-dnscrypt-ip4-filter-pri']
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
 ## Example with both IPv4 and IPv6:
 ## listen_addresses = ['127.0.0.1:53', '[::1]:53']
 
 listen_addresses = [':53']
-
 
 ## Maximum number of simultaneous client connections to accept
 
@@ -50,7 +47,6 @@ max_clients = 250
 ## Note (3): when using -pidfile, the PID file directory must be writable by the new user
 
 # user_name = 'nobody'
-
 
 ## Require servers (from static + remote sources) to satisfy specific properties
 
