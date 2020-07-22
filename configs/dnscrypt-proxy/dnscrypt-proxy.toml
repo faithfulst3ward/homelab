@@ -320,7 +320,7 @@ reject_ttl = 600
 ##
 ## See the `example-cloaking-rules.txt` file for an example
 
- cloaking_rules = 'cloaking-rules.txt'
+ cloaking_rules = 'cloaking-rules'
 
 ## TTL used when serving entries in cloaking-rules.txt
 
