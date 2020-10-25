@@ -36,7 +36,7 @@
 # ads.*                 192.168.100.2
 # ads.*                 ::1
 
-udmp.faithfulst3ward.net  10.0.1.1
-uswp.faithfulst3ward.net  10.0.1.10
-uapp.faithfulst3ward.net  10.0.1.50
-dns.faithfulst3ward.net  10.1.1.100
+udmp.faithfulst3ward.net  172.20.1.1
+uswp.faithfulst3ward.net  172.20.1.10
+uapp.faithfulst3ward.net  172.20.1.50
+dns.faithfulst3ward.net  172.20.1.100
