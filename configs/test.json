@@ -1,0 +1,98 @@
+[
+  {
+    "key": "AKN",
+    "latitude": 33.566540,
+    "longitude": -81.744370,
+    "name": "Aiken"
+  },
+  {
+    "key": "AND",
+    "latitude": 34.595210,
+    "longitude": -82.621890,
+    "name": "Anderson"
+  },
+  {
+    "key": "CHS",
+    "latitude": 32.917610,
+    "longitude": -80.102318,
+    "name": "Charleston"
+  },
+  {
+    "key": "CLE",
+    "latitude": 34.688950,
+    "longitude": -82.856796,
+    "name": "Clemson"
+  },
+  {
+    "key": "COL",
+    "latitude": 34.031000,
+    "longitude": -81.098540,
+    "name": "Columbia"
+  },
+  {
+    "key": "EST",
+    "latitude": 34.824740,
+    "longitude": -82.368820,
+    "name": "Columbia"
+  },
+  {
+    "key": "FLO",
+    "latitude": 34.214670,
+    "longitude": -79.796550,
+    "name": "Florence"
+  },
+  {
+    "key": "GWD",
+    "latitude": 34.214010,
+    "longitude": -82.149380,
+    "name": "Greenwood"
+  },
+  {
+    "key": "HHD",
+    "latitude": 32.309710,
+    "longitude": -80.970810,
+    "name": "Hilton Head"
+  },
+  {
+    "key": "LKW",
+    "latitude": 35.091770,
+    "longitude": -81.097950,
+    "name": "Lake Wylie"
+  },
+  {
+    "key": "MYR",
+    "latitude": 33.714760,
+    "longitude": -78.926070,
+    "name": "Myrtle Beach"
+  },
+  {
+    "key": "NEC",
+    "latitude": 34.134160,
+    "longitude": -80.856120,
+    "name": "Northeast Columbia"
+  },
+  {
+    "key": "NSC",
+    "latitude": 34.591650,
+    "longitude": -82.619560,
+    "name": "NewSpring Support Center"
+  },
+  {
+    "key": "POW",
+    "latitude": 34.786740,
+    "longitude": -82.485770,
+    "name": "Powdersville"
+  },
+  {
+    "key": "SPA",
+    "latitude": 34.933150,
+    "longitude":-81.994350 ,
+    "name": "Spartanburg"
+  },
+  {
+    "key": "WAR",
+    "latitude": 34.631460,
+    "longitude": -82.5996900 ,
+    "name": "Warehouse"
+  }
+]
